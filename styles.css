@@ -4,3 +4,85 @@ h1 {
 p {
   color: rgb(247, 3, 3);
 }
+table {
+  border-collapse: collapse;
+}
+td {
+  border: 1px solid black;
+  padding: 2px;
+  width: 100px;
+}
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: linear-gradient(-120deg, #2d36af, #197e7e);
+}
+body,
+textarea {
+  font-family: sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 20px;
+}
+.form_box {
+  display: flex;
+  flex-direction: column;
+  background-color: #b1b0b0a2;
+  border-radius: 8px;
+  width: 700px;
+}
+.form_box .title {
+  font-size: 24px;
+  padding: 20px 200px;
+  border-bottom: thin solid #b32121;
+  align-self: center;
+}
+.form_box form {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  padding: 32px;
+}
+.form_box input,
+.form_box textarea {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  border: thin solid #999;
+  padding-left: 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+.form_box input[name="subject"] {
+  width: 100%;
+}
+.form_box textarea {
+  width: 100%;
+  height: 100px;
+  padding: 16px;
+}
+.form_box button {
+  display: block;
+  border: none;
+  outline: none;
+  width: 180px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #52a8ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.form_box button:hover {
+  background-color: #1e6ed0;
+}
